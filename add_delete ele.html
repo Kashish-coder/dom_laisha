@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The document object</h1>
+    <h2>create ele method</h2>
+
+    <p>Create ele and append it to "myDiv"</p>
+    <div id="myDiv" style="padding:16px;
+    background-color: pink;">
+    <h3>A div element</h3>
+</div>
+    <script>
+        const para=document.createElement("p");
+        para.innerHTML="this is a para";
+        document.getElementById("mydiv").appendChild(para);
+    </script>
+</body>
+</html>

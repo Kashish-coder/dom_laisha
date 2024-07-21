@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-black{
+            background-color: aqua;
+            color:aliceblue
+
+        }
+    </style>
+</head>
+<body>
+    <form id="form" action="/action_page.php">
+        first name:<input type="text" name=fname
+ value="Donald"><br>
+ last name:<input type="text" name=lname
+ value="Duck"><br>
+ <input type="submit" value="submit">
+
+    </form>
+    <p>click try it button to display number of elements in form</p>
+    <button onclick="myfunction()">Try it</button>
+    <p id="displayspace"></p>
+    <script>
+        function myfunction(){
+            var x=document.getElementById("form").elements.length;
+            var y=document.getElementById("form").elements[0].value;
+            document.getElementById("displayspace").innerHTML="found"+x+" elements in form"+" first name entered is "+y;
+        
+
+
+        //create element and insert in dom 
+        const para=document.createElement("p");
+        para.innerText="This is a para created via dom";
+        document.body.appendchild(para);}
+    </script>
+</body>
+</html>

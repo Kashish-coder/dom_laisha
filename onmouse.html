@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmouseover="mover(this)" onmouseout="mout(this)"
+    style="background-color:pink;width:120px;padding:25px;">
+Mouse over me</div>
+<script>
+    function mover(obj){
+        obj.innerHTML="thanks"
+    }
+    function mout(obj){
+        obj.innerHTML="Mouse over me"
+    }
+</script>
+</body>
+</html>
